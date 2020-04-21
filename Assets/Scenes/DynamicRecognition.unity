@@ -450,6 +450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9149fb5caaaf2644296163b3f74de33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  augmentationObject: {fileID: 3826296910908760865, guid: 5061ebe402485ee4d81538b4b0c64d40,
+  augmentationObject: {fileID: 6879669389257572923, guid: b23f7ec045168c745917911e0c321066,
     type: 3}
   dataSetName: itb6-ARProject_OT
