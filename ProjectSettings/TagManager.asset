@@ -7,6 +7,7 @@ TagManager:
   - PrinterInfo
   - PrinterName
   - PaperFormats
+  - InstructionText
   layers:
   - Default
   - TransparentFX

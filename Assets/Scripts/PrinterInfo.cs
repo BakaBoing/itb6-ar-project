@@ -12,10 +12,13 @@ namespace Assets.Scripts
         
         public IEnumerable<PaperFormat> PaperFormats { get; set; }
 
-        public PrinterInfo(string name, IEnumerable<PaperFormat> paperFormats)
+        public string Instructions { get; set; }
+
+        public PrinterInfo(string name, IEnumerable<PaperFormat> paperFormats, string instructions)
         {
             Name = name;
             PaperFormats = paperFormats;
+            Instructions = instructions; 
         }
     }
 }

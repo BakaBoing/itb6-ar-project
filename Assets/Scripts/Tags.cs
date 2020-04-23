@@ -11,5 +11,6 @@ namespace Assets.Scripts
         public const string PrinterInfo = "PrinterInfo";
         public const string PrinterName = "PrinterName";
         public const string PaperFormats = "PaperFormats";
+        public const string InstructionsText = "InstructionsText";
     }
 }

@@ -72,6 +72,9 @@ namespace Assets.Scripts
                             case Tags.PaperFormats:
                                 info.SetText(String.Join(", ", printerInfo.PaperFormats));
                                 break;
+                                case Tags.InstructionsText:
+                                info.SetText(printerInfo.Instructions);
+                                break;
                         }
                     }
 
