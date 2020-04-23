@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
   <TargetSet version="5.0" toolVersion="4.2.0">
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-04-22T09:18:33Z" name="VARTA_AA" targetId="32811476e6cc4625867306d319b7ae40" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-04-23T08:51:53Z" name="50_CENT" targetId="8012360dcb184e4893e1084a7210661c" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-04-03T16:22:52Z" name="Printer_HP_Deskjet_3050" targetId="fdfc6c9cba8d437797c1db18181a1c3a" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2020-04-03T14:52:51Z" name="3D-car" targetId="f239357959264e41b7aaebe165c43a51" version="2.0" />
   </TargetSet>

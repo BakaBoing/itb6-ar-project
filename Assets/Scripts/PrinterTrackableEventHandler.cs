@@ -64,8 +64,6 @@ namespace Assets.Scripts
 
                     foreach (TMP_Text info in infoChilds)
                     {
-                        Debug.LogError(info.name);
-                        Debug.LogError(info.tag);
                         switch (info.name)
                         {
                             case Tags.PrinterName:

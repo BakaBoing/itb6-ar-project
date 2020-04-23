@@ -3,7 +3,6 @@ using System.Collections;
 using Vuforia;
 using System.Collections.Generic;
 using Assets.Scripts;
-using UnityEditor;
 using System.Reflection;
 
 public class DynamicDataSetLoader : MonoBehaviour
@@ -17,7 +16,7 @@ public class DynamicDataSetLoader : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        AddTags();
+        //AddTags();
         VuforiaARController.Instance.RegisterVuforiaStartedCallback(LoadDataSet);
     }
 
@@ -62,10 +61,6 @@ public class DynamicDataSetLoader : MonoBehaviour
                         GameObject augmentation = (GameObject)GameObject.Instantiate(augmentationObject);
                         augmentation.tag = Tags.PrinterInfo;
                         augmentation.transform.parent = tb.gameObject.transform;
-                        //augmentation.transform.localPosition = new Vector3(0f, 0f, 0f);
-                        //augmentation.transform.localRotation = Quaternion.identity;
-                        //augmentation.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
-                        //augmentation.gameObject.SetActive(true);
                     }
                     else
                     {
@@ -80,48 +75,48 @@ public class DynamicDataSetLoader : MonoBehaviour
         }
     }
 
-    void AddTags()
-    {
-        // Open tag manager
-        SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
-        SerializedProperty tagsProp = tagManager.FindProperty("tags");
+    //void AddTags()
+    //{
+    //    // Open tag manager
+    //    SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
+    //    SerializedProperty tagsProp = tagManager.FindProperty("tags");
 
-        foreach(FieldInfo fi in typeof(Tags).GetFields())
-        {
-            if (fi.IsLiteral)
-            {
-                string tag = (string)fi.GetValue(null);
+    //    foreach(FieldInfo fi in typeof(Tags).GetFields())
+    //    {
+    //        if (fi.IsLiteral)
+    //        {
+    //            string tag = (string)fi.GetValue(null);
 
-                if(IsTagPresent(tagsProp, tag) == false)
-                {
-                    AddTag(tagsProp, tag);
-                }
-            }
-        }
+    //            if(IsTagPresent(tagsProp, tag) == false)
+    //            {
+    //                AddTag(tagsProp, tag);
+    //            }
+    //        }
+    //    }
 
-        tagManager.ApplyModifiedProperties();
-    }
+    //    tagManager.ApplyModifiedProperties();
+    //}
 
-    private bool IsTagPresent(SerializedProperty tags, string tag)
-    {
-        bool found = false;
-        for (int i = 0; i < tags.arraySize; i++)
-        {
-            SerializedProperty t = tags.GetArrayElementAtIndex(i);
-            if (t.stringValue.Equals(tag))
-            {
-                found = true;
-                break;
-            }
-        }
+    //private bool IsTagPresent(SerializedProperty tags, string tag)
+    //{
+    //    bool found = false;
+    //    for (int i = 0; i < tags.arraySize; i++)
+    //    {
+    //        SerializedProperty t = tags.GetArrayElementAtIndex(i);
+    //        if (t.stringValue.Equals(tag))
+    //        {
+    //            found = true;
+    //            break;
+    //        }
+    //    }
 
-        return found;
-    }
+    //    return found;
+    //}
 
-    private void AddTag(SerializedProperty tags, string tag)
-    {
-        tags.InsertArrayElementAtIndex(0);
-        SerializedProperty n = tags.GetArrayElementAtIndex(0);
-        n.stringValue = tag;
-    }
+    //private void AddTag(SerializedProperty tags, string tag)
+    //{
+    //    tags.InsertArrayElementAtIndex(0);
+    //    SerializedProperty n = tags.GetArrayElementAtIndex(0);
+    //    n.stringValue = tag;
+    //}
 }

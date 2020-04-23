@@ -15,6 +15,8 @@ namespace Assets.Scripts
             _db = new Dictionary<string, PrinterInfo>();
             _db.Add("Printer_HP_Deskjet_3050", new PrinterInfo("HP Deskjet 3050", new List<PaperFormat> { PaperFormat.A4 }));
             _db.Add("3D-car", new PrinterInfo("Äutile", new List<PaperFormat> { PaperFormat.A5, PaperFormat.A4 }));
+            _db.Add("50_CENT", new PrinterInfo("50 in tha house", new List<PaperFormat> { PaperFormat.A3 }));
+            _db.Add("VARTA_AA", new PrinterInfo("Agathe Bauer", new List<PaperFormat> { PaperFormat.A5, PaperFormat.A4 }));
         }
 
         public PrinterInfo GetPrinterInfo(string printerTrackableId)
