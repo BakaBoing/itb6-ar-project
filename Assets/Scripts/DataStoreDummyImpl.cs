@@ -18,6 +18,7 @@ namespace Assets.Scripts
             _db.Add("50_CENT", new PrinterInfo("50 in tha house", new List<PaperFormat> { PaperFormat.A3 }));
             _db.Add("VARTA_AA", new PrinterInfo("Agathe Bauer", new List<PaperFormat> { PaperFormat.A5, PaperFormat.A4 }));
             _db.Add("DIORITE", new PrinterInfo("MC Builders", new List<PaperFormat> { PaperFormat.A5 }));
+            _db.Add("QR1", new PrinterInfo("Uhhhh Hiding Boring Infos", new List<PaperFormat> { PaperFormat.A4 }));
         }
 
         public PrinterInfo GetPrinterInfo(string printerTrackableId)
