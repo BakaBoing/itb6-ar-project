@@ -11,10 +11,10 @@ public class ManomotionUIManagment : MonoBehaviour
 
     private void Awake()
     {
-        if (!licenseInfoGizmo)
+      /*  if (!licenseInfoGizmo)
         {
             licenseInfoGizmo = transform.Find("LicenseInfoGizmo").gameObject;
-        }
+        } */
         ManomotionManager.OnManoMotionFrameProcessed += DisplayInformationAfterManoMotionProcessFrame;
         ManomotionManager.OnManoMotionLicenseInitialized += HandleManoMotionManagerInitialized;
     }
@@ -24,8 +24,8 @@ public class ManomotionUIManagment : MonoBehaviour
     /// </summary>
     void DisplayInformationAfterManoMotionProcessFrame()
     {
-        UpdateFPSText();
-        UpdateProcessingTime();
+        /*UpdateFPSText();
+        UpdateProcessingTime();*/
     }
 
     /// <summary>
@@ -40,7 +40,7 @@ public class ManomotionUIManagment : MonoBehaviour
     /// <summary>
     /// Updates the text field with the calculated Frames Per Second value.
     /// </summary>
-    public void UpdateFPSText()
+   /* public void UpdateFPSText()
     {
         FPSValueText.text = ManomotionManager.Instance.Fps.ToString();
     }
@@ -81,10 +81,10 @@ public class ManomotionUIManagment : MonoBehaviour
             licenseEnd.text = "License: " + lastDigits;
         }
     }
-
+*/
     public void HandleManoMotionManagerInitialized()
     {
-        versionText.text = "Version ";
+      /*  versionText.text = "Version ";
         float versionFull = ManomotionManager.Instance.ManoLicense.version;
         string prefix = "Version ";
 
@@ -97,7 +97,7 @@ public class ManomotionUIManagment : MonoBehaviour
 
         int versionLength = versionFull.ToString().Length;
 
-        versionText.text = prefix += versionString;
+        versionText.text = prefix += versionString;*/
     }
 
     private void OnEnable()

@@ -45,7 +45,6 @@ public class DynamicDataSetLoader : MonoBehaviour
             IEnumerable<TrackableBehaviour> tbs = TrackerManager.Instance.GetStateManager().GetTrackableBehaviours();
             foreach (TrackableBehaviour tb in tbs)
             {
-                Debug.Log($"{tb.name}: {tb.TrackableName}");
                 if (tb.name == "New Game Object")
                 {
                     // change generic name to include trackable name

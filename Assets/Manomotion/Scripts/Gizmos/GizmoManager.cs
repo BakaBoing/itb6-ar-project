@@ -296,7 +296,7 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="depthEstimation">Requires the float value of depth estimation.</param>
 	void DisplayDepthEstimation(float depthEstimation)
 	{
-		depthEstimationGizmo.SetActive(ShowDepthEstimation);
+/*		depthEstimationGizmo.SetActive(ShowDepthEstimation);
 
 		if (!depthEstimationValue)
 		{
@@ -310,7 +310,7 @@ public class GizmoManager : MonoBehaviour
 		{
 			depthEstimationValue.text = depthEstimation.ToString("F2");
 			depthFillAmmount.fillAmount = depthEstimation;
-		}
+		}*/
 	}
 
 
@@ -320,10 +320,10 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="session">Session.</param>
 	void DisplayCurrentsmoothingValue(Session session)
 	{
-		if (smoothingSliderControler.activeInHierarchy)
+/*		if (smoothingSliderControler.activeInHierarchy)
 		{
 			currentSmoothingValue.text = "Tracking Smoothing: " + session.smoothing_controller.ToString("F2");
-		}
+		} */
 	}
 
     /// <summary>
@@ -332,10 +332,10 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="session">Session.</param>
 	void DisplayCurrentGesureSmoothingValue(Session session)
     {
-        if (gestureSmoothingSliderControler.activeInHierarchy)
+     /*   if (gestureSmoothingSliderControler.activeInHierarchy)
         {
             currentGestureSmoothingValue.text = "Gesture Smoothing: " + session.gesture_smoothing_controller.ToString("F2");
-        }
+        } */
     }
 
     /// <summary>
@@ -441,7 +441,7 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="manoclass">Manoclass.</param>
 	void DisplayManoclass(ManoClass manoclass)
 	{
-		manoClassGizmo.SetActive(ShowManoClass);
+/*		manoClassGizmo.SetActive(ShowManoClass);
 		if (ShowManoClass)
 		{
 			switch (manoclass)
@@ -462,7 +462,7 @@ public class GizmoManager : MonoBehaviour
 					manoClassText.text = "Manoclass: No Hand";
 					break;
 			}
-		}
+		}*/
 	}
 
 	/// <summary>
@@ -471,7 +471,7 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="manoGestureContinuous">Requires a continuous Gesture.</param>
 	void DisplayContinuousGestures(ManoGestureContinuous manoGestureContinuous)
 	{
-		continuousGestureGizmo.SetActive(ShowContinuousGestures);
+	/*	continuousGestureGizmo.SetActive(ShowContinuousGestures);
 		if (ShowContinuousGestures)
 		{
 			switch (manoGestureContinuous)
@@ -498,7 +498,7 @@ public class GizmoManager : MonoBehaviour
 					continuousGestureText.text = "Continuous: None";
 					break;
 			}
-		}
+		} */
 	}
 
 	/// <summary>
@@ -507,7 +507,7 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="handside">Requires a ManoMotion Handside.</param>
 	void DisplayHandSide(HandSide handside)
 	{
-		handSideGizmo.SetActive(ShowHandSide);
+	/*	handSideGizmo.SetActive(ShowHandSide);
 		if (ShowHandSide)
 		{
 			switch (handside)
@@ -525,7 +525,7 @@ public class GizmoManager : MonoBehaviour
 					handSideText.text = "Handside: None";
 					break;
 			}
-		}
+		}*/
 	}
 
 	///// <summary>
@@ -534,11 +534,11 @@ public class GizmoManager : MonoBehaviour
 	///// <param name="gesture_info"></param>
 	void DisplayHandState(int handstate)
 	{
-		handStatesGizmo.SetActive(ShowHandStates);
+		/*handStatesGizmo.SetActive(ShowHandStates);
 		if (ShowHandStates)
 		{
 			HighlightStatesToStateDetection(handstate);
-		}
+		}*/
 	}
 
 	ManoGestureTrigger previousTrigger;
@@ -656,7 +656,7 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="stateValue">Requires a hand state value to assign the colors accordingly </param>
 	void HighlightStatesToStateDetection(int stateValue)
 	{
-		for (int i = 0; i < stateImages.Length; i++)
+	/*	for (int i = 0; i < stateImages.Length; i++)
 		{
 			if (i > stateValue)
 			{
@@ -666,7 +666,7 @@ public class GizmoManager : MonoBehaviour
 			{
 				stateImages[i].color = Color.white;
 			}
-		}
+		}*/
 	}
 
 	/// <summary>
@@ -675,7 +675,7 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="warning">Requires a warning.</param>
 	void DisplayApproachingToEdgeFlags(Warning warning)
 	{
-		if (_showWarnings)
+		/*if (_showWarnings)
 		{
 			if (!flagHolderGizmo.activeInHierarchy)
 			{
@@ -693,7 +693,7 @@ public class GizmoManager : MonoBehaviour
 			{
 				flagHolderGizmo.SetActive(false);
 			}
-		}
+		}*/
 	}
 
 	/// <summary>
@@ -702,8 +702,8 @@ public class GizmoManager : MonoBehaviour
 	/// <param name="display">If set to <c>true</c> display.</param>
 	public void ShouldDisplaySmoothingSlider(bool display)
 	{
-		smoothingSliderControler.SetActive(display);
-        gestureSmoothingSliderControler.SetActive(display);
+		/*smoothingSliderControler.SetActive(display);
+        gestureSmoothingSliderControler.SetActive(display);*/
 	}
 
 	/// <summary>
@@ -711,8 +711,8 @@ public class GizmoManager : MonoBehaviour
 	/// </summary>
 	public void DisplaySmoothingSlider()
 	{
-		smoothingSliderControler.SetActive(_showSmoothingSlider);
-        gestureSmoothingSliderControler.SetActive(_showSmoothingSlider);        
+		/*smoothingSliderControler.SetActive(_showSmoothingSlider);
+        gestureSmoothingSliderControler.SetActive(_showSmoothingSlider);*/        
 	}
 
 	/// <summary>
@@ -720,9 +720,9 @@ public class GizmoManager : MonoBehaviour
 	/// </summary>
 	void SetGestureDescriptionParts()
 	{
-		manoClassText = manoClassGizmo.transform.Find("Description").GetComponent<Text>();
+/*		manoClassText = manoClassGizmo.transform.Find("Description").GetComponent<Text>();
 		handSideText = handSideGizmo.transform.Find("Description").GetComponent<Text>();
-		continuousGestureText = continuousGestureGizmo.transform.Find("Description").GetComponent<Text>();
+		continuousGestureText = continuousGestureGizmo.transform.Find("Description").GetComponent<Text>();*/
 		palmCenterRectTransform = palmCenterGizmo.GetComponent<RectTransform>();
 		palmCenterFillAmmount = palmCenterGizmo.transform.GetChild(0).GetComponent<RectTransform>();
 		poiRectTransform = POIGizmo.GetComponent<RectTransform>();
@@ -734,9 +734,9 @@ public class GizmoManager : MonoBehaviour
 	/// </summary>
 	void InitializeFlagParts()
 	{
-		topFlag = flagHolderGizmo.transform.Find("Top").gameObject;
+/*		topFlag = flagHolderGizmo.transform.Find("Top").gameObject;
 		rightFlag = flagHolderGizmo.transform.Find("Right").gameObject;
-		leftFlag = flagHolderGizmo.transform.Find("Left").gameObject;
+		leftFlag = flagHolderGizmo.transform.Find("Left").gameObject;*/
 	}
 
 	#endregion

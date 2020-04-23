@@ -24,22 +24,6 @@ namespace Assets.Scripts
     {
         private static bool _isInfoScreenShowing = false;
         private GameObject _infoScreen = null;
-        private Rect _position = new Rect(50, 50, 200, 100);
-
-        //void OnGUI()
-        //{
-        //if (_isInfoScreenShowing)
-        //{
-        //    GUIStyle style = new GUIStyle();
-        //    style.fontSize = 300;
-        //    GUI.Label(_position, _trackableBehaviour.TrackableName, style);
-
-        //    //if (GUI.Button(_position, "Hello"))
-        //    //{
-        //    //    // do something on button click	
-        //    //}
-        //}
-        //}
 
         private void ShowInfoScreen()
         {
@@ -74,7 +58,6 @@ namespace Assets.Scripts
                                 info.SetText(String.Join(", ", printerInfo.PaperFormats));
                                 break;
                             case Tags.InstructionsText:
-                                Debug.LogError("Info: " + info);
                                 info.SetText(printerInfo.Instructions);
                                 break;
                         }
@@ -135,10 +118,6 @@ namespace Assets.Scripts
         {
             _previousStatus = previousStatus;
             _newStatus = newStatus;
-
-            Debug.Log("Trackable " + _trackableBehaviour.TrackableName +
-                      " " + _trackableBehaviour.CurrentStatus +
-                      " -- " + _trackableBehaviour.CurrentStatusInfo);
 
             if (newStatus == TrackableBehaviour.Status.DETECTED ||
                 newStatus == TrackableBehaviour.Status.TRACKED ||
