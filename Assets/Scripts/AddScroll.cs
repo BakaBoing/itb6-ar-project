@@ -8,7 +8,7 @@ public class AddScroll : MonoBehaviour
     public Scrollbar scrollbar;
     private void Start()
     {
-        SetScroll.Instance.scrollbars.Add(scrollbar);
+        SetScroll.Instance.AddScrollbar(scrollbar);
     }
 
     private void OnDestroy()

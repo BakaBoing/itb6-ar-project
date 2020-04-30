@@ -28,17 +28,17 @@ namespace Assets.Scripts
 
         //void OnGUI()
         //{
-            //if (_isInfoScreenShowing)
-            //{
-            //    GUIStyle style = new GUIStyle();
-            //    style.fontSize = 300;
-            //    GUI.Label(_position, _trackableBehaviour.TrackableName, style);
+        //if (_isInfoScreenShowing)
+        //{
+        //    GUIStyle style = new GUIStyle();
+        //    style.fontSize = 300;
+        //    GUI.Label(_position, _trackableBehaviour.TrackableName, style);
 
-            //    //if (GUI.Button(_position, "Hello"))
-            //    //{
-            //    //    // do something on button click	
-            //    //}
-            //}
+        //    //if (GUI.Button(_position, "Hello"))
+        //    //{
+        //    //    // do something on button click	
+        //    //}
+        //}
         //}
 
         private void ShowInfoScreen()
@@ -49,7 +49,8 @@ namespace Assets.Scripts
                 {
                     if (_infoScreen == null)
                     {
-                        _infoScreen = component.gameObject.FindComponentInChildWithTag<Component>(Tags.PrinterInfo)?.gameObject;
+                        _infoScreen = component.gameObject.FindComponentInChildWithTag<Component>(Tags.PrinterInfo)
+                            ?.gameObject;
                     }
                     else
                     {
@@ -64,7 +65,7 @@ namespace Assets.Scripts
 
                     foreach (TMP_Text info in infoChilds)
                     {
-                        switch (info.name)
+                        switch (info.tag)
                         {
                             case Tags.PrinterName:
                                 info.SetText(printerInfo.Name);
@@ -72,7 +73,8 @@ namespace Assets.Scripts
                             case Tags.PaperFormats:
                                 info.SetText(String.Join(", ", printerInfo.PaperFormats));
                                 break;
-                                case Tags.InstructionsText:
+                            case Tags.InstructionsText:
+                                Debug.LogError("Info: " + info);
                                 info.SetText(printerInfo.Instructions);
                                 break;
                         }
