@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SetScroll : MonoBehaviour
 {
     public static SetScroll Instance;
-    public List<Scrollbar> scrollbars;
+    public List<Scrollbar> scrollbars = new List<Scrollbar>();
 
     private void Awake()
     {

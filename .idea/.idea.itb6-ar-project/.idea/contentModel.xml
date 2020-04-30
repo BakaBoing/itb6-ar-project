@@ -121,6 +121,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AddScroll.cs" t="Include" />
           <e p="DataStoreDummyImpl.cs" t="Include" />
           <e p="DataStoreQuery.cs" t="Include" />
           <e p="DynamicDataSetLoader.cs" t="Include" />
