@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="Z:\Users\jan22\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="Z:\Users\jan22\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_itb6-ar-project.-1682219017.00" t="ExcludeRecursive" />
+    <e p="Z:\Users\jan22\RiderProjects\itb6-ar-project" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="EditorScripts.cs" t="Include" />
+          <e p="ManoMotionSetup.cs" t="Include" />
+          <e p="Vuforia" t="Include">
+            <e p="TargetsetData" t="Include">
+              <e p="itb6-ARProject_info.xml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Manomotion" t="Include">
+          <e p="ApplicationIntro" t="Include">
+            <e p="Instructions" t="Include">
+              <e p="DetectionInstruction.cs" t="Include" />
+              <e p="GestureInstruction.cs" t="Include" />
+              <e p="HandSideInstruction.cs" t="Include" />
+              <e p="Instruction.cs" t="Include" />
+              <e p="StartApplicationInstruction.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="ApplicationManager.cs" t="Include" />
+              <e p="HowToAnimations.cs" t="Include" />
+              <e p="HowToInstructor.cs" t="Include" />
+              <e p="RunTimeApplication.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Examples" t="Include">
+            <e p="Blocks" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="CubeGameManager.cs" t="Include" />
+                <e p="CubeSpawn.cs" t="Include" />
+                <e p="SpawnPoint.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Detection" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ExampleDetectionEdges.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Spooky" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ExampleSpooky.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Fonts" t="Include">
+            <e p="montserrat" t="Include">
+              <e p="SIL Open Font License.txt" t="Include" />
+            </e>
+            <e p="sofiapro" t="Include">
+              <e p="Licenses" t="Include">
+                <e p="Desktop EULA 1.6.txt" t="Include" />
+              </e>
+              <e p="Reference" t="Include">
+                <e p="Release Notes.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Data Structure" t="Include">
+              <e p="GestureInfo.cs" t="Include" />
+              <e p="HandInfo.cs" t="Include" />
+              <e p="HandInfoUnity.cs" t="Include" />
+              <e p="ManoLicense.cs" t="Include" />
+              <e p="ManomotionBase.cs" t="Include" />
+              <e p="ManoMotionFrame.cs" t="Include" />
+              <e p="ManomotionManager.cs" t="Include" />
+              <e p="ManoSettings.cs" t="Include" />
+              <e p="Session.cs" t="Include" />
+              <e p="TrackingInfo.cs" t="Include" />
+              <e p="VisualizationInfo.cs" t="Include" />
+            </e>
+            <e p="Gizmos" t="Include">
+              <e p="GizmoManager.cs" t="Include" />
+              <e p="TriggerGizmo.cs" t="Include" />
+            </e>
+            <e p="Input" t="Include">
+              <e p="InputManagerBaseClass.cs" t="Include" />
+              <e p="InputManagerPhoneCamera.cs" t="Include" />
+            </e>
+            <e p="MainMenu" t="Include">
+              <e p="Category.cs" t="Include" />
+              <e p="CategoryManager.cs" t="Include" />
+              <e p="IconMainMenu.cs" t="Include" />
+              <e p="ManomotionUIManagment.cs" t="Include" />
+              <e p="MenuButton.cs" t="Include" />
+              <e p="PrivacyPolicyDisclaimair.cs" t="Include" />
+              <e p="ToggleGizmos.cs" t="Include" />
+              <e p="UIIconBehavior.cs" t="Include" />
+            </e>
+            <e p="ManoVisualization" t="Include">
+              <e p="BoundingBox.cs" t="Include" />
+              <e p="BoundingBoxUI.cs" t="Include" />
+              <e p="ManoVisualization.cs" t="Include" />
+              <e p="ToggleVisualizationValues.cs" t="Include" />
+            </e>
+            <e p="Util Tools" t="Include">
+              <e p="ManoEvents.cs" t="Include" />
+              <e p="ManoUtils.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UIBlurEffect" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="BWEffect.cs" t="Include" />
+              <e p="GrabPass.cs" t="Include" />
+              <e p="Grayscale.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="GrabPass.shader" t="Include" />
+              <e p="Grayscale.shader" t="Include" />
+              <e p="Post.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="DataStoreDummyImpl.cs" t="Include" />
+          <e p="DataStoreQuery.cs" t="Include" />
+          <e p="DynamicDataSetLoader.cs" t="Include" />
+          <e p="Extensions.cs" t="Include" />
+          <e p="IDataStore.cs" t="Include" />
+          <e p="PaperFormat.cs" t="Include" />
+          <e p="PrinterInfo.cs" t="Include" />
+          <e p="PrinterTrackableEventHandler.cs" t="Include" />
+          <e p="SetScroll.cs" t="Include" />
+          <e p="Tags.cs" t="Include" />
+        </e>
+        <e p="Setup ManoMotion SDK Lite 1.2.txt" t="Include" />
+        <e p="StreamingAssets" t="Include">
+          <e p="Vuforia" t="Include">
+            <e p="itb6-ARProject_OT.xml" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="itb6-ar-project.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
