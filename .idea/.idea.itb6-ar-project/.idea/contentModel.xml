@@ -130,6 +130,7 @@
           <e p="PaperFormat.cs" t="Include" />
           <e p="PrinterInfo.cs" t="Include" />
           <e p="PrinterTrackableEventHandler.cs" t="Include" />
+          <e p="ScrollButtons.cs" t="Include" />
           <e p="SetScroll.cs" t="Include" />
           <e p="Tags.cs" t="Include" />
         </e>
