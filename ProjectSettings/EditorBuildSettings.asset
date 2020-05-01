@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Manomotion/Scenes/ManoMotion SDK Lite Features.unity
     guid: 2e8ecbb9ea2e340009ac8d7dd6fbd854
   - enabled: 1
-    path: Assets/Scenes/DynamicRecognitionGestureTry.unity
+    path: Assets/Scenes/DynamicRecognitionGesture.unity
     guid: 2f16e542cb9719f4bab7baf57ceb7a9a
   m_configObjects: {}
