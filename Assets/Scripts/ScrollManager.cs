@@ -8,6 +8,11 @@ namespace Assets.Scripts
 {
     public class ScrollManager : MonoBehaviour
     {
+        [SerializeField]
+        private GameObject _canvas;
+        [SerializeField]
+        private float _scrollAmount = 0.01f;
+
         private static ScrollManager _scrollManager;
         public static ScrollManager Instance
         {
@@ -49,7 +54,7 @@ namespace Assets.Scripts
             {
                 if (Input.GetKey(KeyCode.UpArrow))
                 {
-                    ScrollUp(0.01f);
+                    ScrollUp();
                 }
                 if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
@@ -57,16 +62,16 @@ namespace Assets.Scripts
                 }
                 if (Input.GetKey(KeyCode.DownArrow))
                 {
-                    ScrollDown(0.01f);
+                    ScrollDown();
                 }
 
                 if (ManomotionManager.Instance?.Hand_infos?[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.CLICK)
                 {
-                    ScrollDown(0.01f);
+                    ScrollDown();
                 }
                 if (ManomotionManager.Instance?.Hand_infos?[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.PICK)
                 {
-                    ScrollUp(0.01f);
+                    ScrollUp();
                 }
             }
         }
@@ -81,14 +86,19 @@ namespace Assets.Scripts
             }
         }
 
-        public void ScrollUp(float amount)
+        public void ScrollUp()
         {
-            SetScrolling(_currentScroll + amount);
+            SetScrolling(_currentScroll + _scrollAmount);
         }
 
-        public void ScrollDown(float amount)
+        public void ScrollDown()
         {
-            SetScrolling(_currentScroll - amount);
+            SetScrolling(_currentScroll - _scrollAmount);
+        }
+
+        private void Update()
+        {
+            _canvas?.SetActive(_scrollbars?.Count > 0);
         }
     }
 }

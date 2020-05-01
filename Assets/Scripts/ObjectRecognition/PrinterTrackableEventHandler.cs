@@ -179,6 +179,8 @@ namespace Assets.Scripts
         {
             if (_trackableBehaviour)
             {
+                HideInfoScreen();
+
                 var rendererComponents = _trackableBehaviour.GetComponentsInChildren<Renderer>(true);
                 var colliderComponents = _trackableBehaviour.GetComponentsInChildren<Collider>(true);
                 var canvasComponents = _trackableBehaviour.GetComponentsInChildren<Canvas>(true);
