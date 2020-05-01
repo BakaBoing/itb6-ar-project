@@ -421,7 +421,7 @@ PrefabInstance:
     - target: {fileID: 114640345446220430, guid: f5ada212b3b98412ea46723d2f7d7fac,
         type: 3}
       propertyPath: _show_bounding_box
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114640345446220430, guid: f5ada212b3b98412ea46723d2f7d7fac,
         type: 3}
