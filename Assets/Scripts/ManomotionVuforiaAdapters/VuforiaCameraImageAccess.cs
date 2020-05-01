@@ -10,6 +10,7 @@ public class VuforiaCameraImageAccess : MonoBehaviour
     private PIXEL_FORMAT _pixelFormat = PIXEL_FORMAT.UNKNOWN_FORMAT;
     private bool _accessCameraImage = true;
     private bool _formatRegistered = false;
+    private static Texture2D _tempTexture;
     #endregion // PRIVATE_MEMBERS
 
     #region MONOBEHAVIOUR_METHODS
@@ -20,6 +21,8 @@ public class VuforiaCameraImageAccess : MonoBehaviour
 #else
         _pixelFormat = PIXEL_FORMAT.RGB888; // Use RGB888 for mobile
 #endif
+
+        _tempTexture = new Texture2D(1, 1);
 
         // Register Vuforia life-cycle callbacks:
         VuforiaARController.Instance.RegisterVuforiaStartedCallback(OnVuforiaStarted);
@@ -56,25 +59,6 @@ public class VuforiaCameraImageAccess : MonoBehaviour
             if (_accessCameraImage)
             {
                 ActualImage = CameraDevice.Instance.GetCameraImage(_pixelFormat);
-                //    if (ActualImage != null)
-                //    {
-                //        Debug.Log(
-                //            "\nImage Format: " + ActualImage.PixelFormat +
-                //            "\nImage Size:   " + ActualImage.Width + "x" + ActualImage.Height +
-                //            "\nBuffer Size:  " + ActualImage.BufferWidth + "x" + ActualImage.BufferHeight +
-                //            "\nImage Stride: " + ActualImage.Stride + "\n"
-                //        );
-                //        byte[] pixels = ActualImage.Pixels;
-                //        if (pixels != null && pixels.Length > 0)
-                //        {
-                //            Debug.Log(
-                //                "\nImage pixels: " +
-                //                pixels[0] + ", " +
-                //                pixels[1] + ", " +
-                //                pixels[2] + ", ...\n"
-                //            );
-                //        }
-                //    }
             }
         }
     }
@@ -123,8 +107,7 @@ public class VuforiaCameraImageAccess : MonoBehaviour
 
     public static Color32[] GetPixels32()
     {
-        Texture2D temp = Texture2D.blackTexture;
-        ActualImage.CopyBufferToTexture(temp);
-        return temp.GetPixels32();
+        ActualImage?.CopyBufferToTexture(_tempTexture);
+        return _tempTexture.GetPixels32();
     }
 }

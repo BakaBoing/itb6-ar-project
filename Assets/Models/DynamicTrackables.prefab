@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4805348160919652757
+--- !u!1 &8108947096403286935
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4805348160919652763}
-  - component: {fileID: 4805348160919652762}
+  - component: {fileID: 8108947096403286929}
+  - component: {fileID: 8108947096403286934}
   m_Layer: 0
-  m_Name: ScrollHandle
+  m_Name: DynamicTrackables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4805348160919652763
+--- !u!4 &8108947096403286929
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4805348160919652757}
+  m_GameObject: {fileID: 8108947096403286935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.159211, y: -89.86678, z: -572.3534}
+  m_LocalPosition: {x: -0.2591033, y: -0.14785928, z: 2.2787876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4805348160919652762
+--- !u!114 &8108947096403286934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4805348160919652757}
+  m_GameObject: {fileID: 8108947096403286935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 041c4af3be3904c41957371c753633cb, type: 3}
+  m_Script: {fileID: 11500000, guid: c5eab9a3b50893c45b2412948efa1a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  augmentationObject: {fileID: 6879669389257572923, guid: b23f7ec045168c745917911e0c321066,
+    type: 3}
+  dataSetName: itb6-ARProject_OT

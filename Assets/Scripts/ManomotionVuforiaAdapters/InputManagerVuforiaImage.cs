@@ -140,13 +140,8 @@ namespace Assets.Scripts
 
 
         void Update()
-        //void OnPostRender()
         {
             GetCameraFrameInformation();
-        }
-
-        private void OnDisable()
-        {
         }
 
         #region Application on Background

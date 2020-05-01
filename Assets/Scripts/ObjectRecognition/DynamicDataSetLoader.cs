@@ -73,49 +73,4 @@ public class DynamicDataSetLoader : MonoBehaviour
             Debug.LogError("<color=yellow>Failed to load dataset: '" + dataSetName + "'</color>");
         }
     }
-
-    //void AddTags()
-    //{
-    //    // Open tag manager
-    //    SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
-    //    SerializedProperty tagsProp = tagManager.FindProperty("tags");
-
-    //    foreach(FieldInfo fi in typeof(Tags).GetFields())
-    //    {
-    //        if (fi.IsLiteral)
-    //        {
-    //            string tag = (string)fi.GetValue(null);
-
-    //            if(IsTagPresent(tagsProp, tag) == false)
-    //            {
-    //                AddTag(tagsProp, tag);
-    //            }
-    //        }
-    //    }
-
-    //    tagManager.ApplyModifiedProperties();
-    //}
-
-    //private bool IsTagPresent(SerializedProperty tags, string tag)
-    //{
-    //    bool found = false;
-    //    for (int i = 0; i < tags.arraySize; i++)
-    //    {
-    //        SerializedProperty t = tags.GetArrayElementAtIndex(i);
-    //        if (t.stringValue.Equals(tag))
-    //        {
-    //            found = true;
-    //            break;
-    //        }
-    //    }
-
-    //    return found;
-    //}
-
-    //private void AddTag(SerializedProperty tags, string tag)
-    //{
-    //    tags.InsertArrayElementAtIndex(0);
-    //    SerializedProperty n = tags.GetArrayElementAtIndex(0);
-    //    n.stringValue = tag;
-    //}
 }

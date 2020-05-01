@@ -18,7 +18,7 @@ namespace Assets.Scripts
             _db.Add("50_CENT", new PrinterInfo("50 in tha house", new List<PaperFormat> { PaperFormat.A3 }, "1. Spend"));
             _db.Add("VARTA_AA", new PrinterInfo("Agathe Bauer", new List<PaperFormat> { PaperFormat.A5, PaperFormat.A4 }, "1. Put in \r\n 2. Energize!"));
             _db.Add("DIORITE", new PrinterInfo("MC Builders", new List<PaperFormat> { PaperFormat.A5 }, "1. No idea!"));
-            _db.Add("QR1", new PrinterInfo("Uhhhh Hiding Boring Infos", new List<PaperFormat> { PaperFormat.A4 }, ipsum));
+            _db.Add("QR1", new PrinterInfo("Uhhhh Hiding Boring Infos", new List<PaperFormat> { PaperFormat.A4 }, _ipsum));
         }
 
         public PrinterInfo GetPrinterInfo(string printerTrackableId)
@@ -26,7 +26,7 @@ namespace Assets.Scripts
             return _db[printerTrackableId];
         }
 
-        private String ipsum = @"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+        private String _ipsum = @"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
 
 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
 

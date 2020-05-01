@@ -23,7 +23,6 @@ namespace Assets.Scripts
 
         private List<Scrollbar> _scrollbars = new List<Scrollbar>();
         private float _currentScroll = 1f;
-        private Vector3 _lastPoi;
 
         private void Start()
         {
@@ -46,26 +45,29 @@ namespace Assets.Scripts
 
         private void FixedUpdate()
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (_scrollbars?.Count > 0)
             {
-                ScrollUp(0.01f);
-            }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                SetScrolling(0.5f);
-            }
-            if (Input.GetKey(KeyCode.DownArrow))
-            {
-                ScrollDown(0.01f);
-            }
+                if (Input.GetKey(KeyCode.UpArrow))
+                {
+                    ScrollUp(0.01f);
+                }
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    SetScrolling(0.5f);
+                }
+                if (Input.GetKey(KeyCode.DownArrow))
+                {
+                    ScrollDown(0.01f);
+                }
 
-            if (ManomotionManager.Instance?.Hand_infos?[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.PICK)
-            {
-                ScrollDown(0.01f);
-            }
-            if (ManomotionManager.Instance?.Hand_infos?[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.GRAB_GESTURE)
-            {
-                ScrollUp(0.01f);
+                if (ManomotionManager.Instance?.Hand_infos?[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.CLICK)
+                {
+                    ScrollDown(0.01f);
+                }
+                if (ManomotionManager.Instance?.Hand_infos?[0].hand_info.gesture_info.mano_gesture_trigger == ManoGestureTrigger.PICK)
+                {
+                    ScrollUp(0.01f);
+                }
             }
         }
 

@@ -11,7 +11,7 @@ namespace Assets.Scripts
         private static DataStoreQuery _query = null;
         private IDataStore _dataStore;
 
-        private static DataStoreQuery Instance
+        private static DataStoreQuery _instance
         {
             get => _query ?? new DataStoreQuery();
         }
@@ -23,7 +23,7 @@ namespace Assets.Scripts
 
         public static PrinterInfo GetPrinterInfo(string trackablprinterTrackableId)
         {
-            return Instance._dataStore.GetPrinterInfo(trackablprinterTrackableId);
+            return _instance._dataStore.GetPrinterInfo(trackablprinterTrackableId);
         }
     }
 }
