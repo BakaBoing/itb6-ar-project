@@ -2,6 +2,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Vuforia;
 
 namespace Assets.Scripts
@@ -16,6 +17,7 @@ namespace Assets.Scripts
     {
         private static bool _isInfoScreenShowing = false;
         private GameObject _infoScreen = null;
+        private Scrollbar _infoScrollbar = null;
 
         private void ShowInfoScreen()
         {
@@ -25,8 +27,7 @@ namespace Assets.Scripts
                 {
                     if (_infoScreen == null)
                     {
-                        _infoScreen = component.gameObject.FindComponentInChildWithTag<Component>(Tags.PrinterInfo)
-                            ?.gameObject;
+                        _infoScreen = component.gameObject.FindComponentInChildWithTag<Component>(Tags.PrinterInfo)?.gameObject;
                     }
                     else
                     {
@@ -60,6 +61,15 @@ namespace Assets.Scripts
                     _infoScreen.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
                     _infoScreen.gameObject.SetActive(true);
                     _isInfoScreenShowing = true;
+
+                    if (_infoScrollbar == null)
+                    {
+                        _infoScrollbar = _trackableBehaviour.gameObject.GetComponentInChildren<Scrollbar>();
+                    }
+                    if (_infoScrollbar != null)
+                    {
+                        ScrollManager.AddScrollbar(_infoScrollbar);
+                    }
                 }
             }
         }
@@ -70,6 +80,11 @@ namespace Assets.Scripts
             {
                 _infoScreen.SetActive(false);
                 _isInfoScreenShowing = false;
+
+                if (_infoScrollbar != null)
+                {
+                    ScrollManager.RemoveScrollbar(_infoScrollbar);
+                }
             }
         }
 

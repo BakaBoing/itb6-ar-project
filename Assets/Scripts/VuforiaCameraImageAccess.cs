@@ -56,25 +56,25 @@ public class VuforiaCameraImageAccess : MonoBehaviour
             if (_accessCameraImage)
             {
                 ActualImage = CameraDevice.Instance.GetCameraImage(_pixelFormat);
-                if (ActualImage != null)
-                {
-                    Debug.Log(
-                        "\nImage Format: " + ActualImage.PixelFormat +
-                        "\nImage Size:   " + ActualImage.Width + "x" + ActualImage.Height +
-                        "\nBuffer Size:  " + ActualImage.BufferWidth + "x" + ActualImage.BufferHeight +
-                        "\nImage Stride: " + ActualImage.Stride + "\n"
-                    );
-                    byte[] pixels = ActualImage.Pixels;
-                    if (pixels != null && pixels.Length > 0)
-                    {
-                        Debug.Log(
-                            "\nImage pixels: " +
-                            pixels[0] + ", " +
-                            pixels[1] + ", " +
-                            pixels[2] + ", ...\n"
-                        );
-                    }
-                }
+                //    if (ActualImage != null)
+                //    {
+                //        Debug.Log(
+                //            "\nImage Format: " + ActualImage.PixelFormat +
+                //            "\nImage Size:   " + ActualImage.Width + "x" + ActualImage.Height +
+                //            "\nBuffer Size:  " + ActualImage.BufferWidth + "x" + ActualImage.BufferHeight +
+                //            "\nImage Stride: " + ActualImage.Stride + "\n"
+                //        );
+                //        byte[] pixels = ActualImage.Pixels;
+                //        if (pixels != null && pixels.Length > 0)
+                //        {
+                //            Debug.Log(
+                //                "\nImage pixels: " +
+                //                pixels[0] + ", " +
+                //                pixels[1] + ", " +
+                //                pixels[2] + ", ...\n"
+                //            );
+                //        }
+                //    }
             }
         }
     }

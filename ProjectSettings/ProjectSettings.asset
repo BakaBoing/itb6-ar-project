@@ -163,8 +163,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.manomotion.sdkliteexample
-    Standalone: com.manomotion.sdkliteexample
+    Android: at.fhv.itb6.ar
+    Standalone: at.fhv.itb6.ar
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 24
