@@ -8,6 +8,8 @@ TagManager:
   - PrinterName
   - PaperFormats
   - InstructionText
+  - baseSDK
+  - PrinterImage
   layers:
   - Default
   - TransparentFX

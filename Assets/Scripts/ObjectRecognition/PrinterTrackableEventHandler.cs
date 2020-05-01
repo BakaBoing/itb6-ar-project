@@ -56,6 +56,17 @@ namespace Assets.Scripts
                         }
                     }
 
+                    // Load printer image here! 
+                    //
+                    //var images = _infoScreen.GetComponentsInChildren<UnityEngine.UI.Image>();
+                    //foreach (var img in images)
+                    //{
+                    //    if (img.tag == Tags.PrinterImage)
+                    //    {
+                    //        img.sprite = _printerPic;
+                    //    }
+                    //}
+
                     _infoScreen.transform.localPosition = new Vector3(0f, 0f, 0f);
                     _infoScreen.transform.localRotation = Quaternion.identity;
                     _infoScreen.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
