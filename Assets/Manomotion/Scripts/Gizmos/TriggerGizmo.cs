@@ -63,7 +63,7 @@ public class TriggerGizmo : MonoBehaviour
         {
             case ManoGestureTrigger.CLICK:
 
-                triggerLabelText.text = "Click";
+                triggerLabelText.text = "ScrollDown";
                 triggerLabelText.color = clickColor;
                 break;
             case ManoGestureTrigger.DROP:
@@ -71,7 +71,7 @@ public class TriggerGizmo : MonoBehaviour
                 triggerLabelText.color = dropColor;
                 break;
             case ManoGestureTrigger.PICK:
-                triggerLabelText.text = "Pick";
+                triggerLabelText.text = "ScrollUp";
                 triggerLabelText.color = pickColor;
                 break;
             case ManoGestureTrigger.GRAB_GESTURE:
